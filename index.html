@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body class="Black-Gradient-Background">
+
+    <!-- The video -->  
+    <div class="center-object">
+        <video autoplay muted loop id="myVideo">
+            <source src="Assets/Grapics/Videos/Clouds-4K.mp4" type="video/mp4">
+        </video>
+    
+    </div>
+    
+    <br>
+    <h1 id="headline-Name" class="Bold-Headline-Name Text-Fade-In-On-Load">NAME</h1>
+
+    <h1 class="Bold-Headline-Main Text-Fade-In-On-Load">Wie funktionieren Bilder auf einem Computer?</h1>
+    
+    <!--
+    <main>
+
+        <div id="container3D"></div>
+
+    </main>
+    -->
+
+    <div class="table-1 header-overlay">
+        <div class="container">
+            <div class="center">
+                <table id="binaryTable-Mono" class="normal-text Text-Fade-In-On-Load" style="width:300%">
+                    <tr>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                </table>
+
+                <div class="table-margin-button">
+                    <button id="table-button-1" class="center-button" onclick="colorCellsMono()">Color Cells</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="palette">
+        <img src="Assets/Grapics/Palette.png">
+    </div>
+
+    <div class="table-2 header-overlay">
+        <div class="container">
+            <div class="center">
+                <table id="binaryTable-Palette" class="normal-text Text-Fade-In-On-Load" style="width:300%">
+                    <div class="strokeText">
+                        <tr>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>3</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>0</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>0</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>0</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>0</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>0</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>0</th>
+                            <th>2</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>0</th>
+                            <th>2</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>0</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>3</th>
+                            <th>3</th>
+                        </tr>
+                    </div>
+                </table>
+
+                <div class="table-margin-button">
+                    <button id="table-button-2" class="center-button" onclick="colorCellsPalette()">Color Cells</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="under-table-section">
+        <h3 class="Bold-Headline-Main">Wie Bilder auf einem Computer formatiert werden</h3>
+        <p class="normal-text">
+            Ein Bild auf einem Computer kann als eine zweidimensionale Matrix von Pixeln betrachtet werden. Jeder Pixel wird durch einen binären Wert repräsentiert: 0 oder 1. In monochromen Bildern steht 0 typischerweise für Schwarz und 1 für Weiß. Diese Matrix kann als Tabelle visualisiert werden, wobei jede Zelle der Tabelle einem Pixel des Bildes entspricht.
+        </p>
+    </div>
+
+
+    <script type="module" src="Modules/3D-Implementation.js"></script>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function colorCellsMono() {
+            const table = document.getElementById('binaryTable-Mono');
+            const cells = table.getElementsByTagName('th');
+            for (let i = 0; i < cells.length; i++) {
+                if (cells[i].innerText === '1') {
+                    await sleep(100); // 0.1 Sekunden warten
+                    cells[i].style.backgroundColor = 'white';
+                    cells[i].classList.remove("strokeText");
+                }
+                if (cells[i].innerText === '0') {
+                    await sleep(100); // 0.1 Sekunden warten
+                    cells[i].style.backgroundColor = 'black';
+                    cells[i].style.color = 'black';
+                    cells[i].classList.remove("strokeText");
+                }
+            }
+        }
+
+        async function colorCellsPalette() {
+            const table = document.getElementById('binaryTable-Palette');
+            const cells = table.getElementsByTagName('th');
+            for (let i = 0; i < cells.length; i++) {
+                if (cells[i].innerText === '0') {
+                    await sleep(100); // 0.2 Sekunden warten
+                    cells[i].style.backgroundColor = 'black';
+                    cells[i].style.color = 'black';
+                    cells[i].classList.remove("strokeText");
+                }
+                if (cells[i].innerText === '1') {
+                    await sleep(100); // 0.2 Sekunden warten
+                    cells[i].style.backgroundColor = 'red';
+                    cells[i].style.color = 'red';
+                    cells[i].classList.remove("strokeText");
+                }
+                if (cells[i].innerText === '2') {
+                    await sleep(100); // 0.2 Sekunden warten
+                    cells[i].style.backgroundColor = 'yellow';
+                    cells[i].style.color = 'yellow';
+                    cells[i].classList.remove("strokeText");
+                }
+                if (cells[i].innerText === '3') {
+                    await sleep(100); // 0.2 Sekunden warten
+                    cells[i].style.backgroundColor = 'white';
+                    cells[i].style.color = 'white';
+                    cells[i].classList.remove("strokeText");
+
+                }
+            }
+        }  
+
+
+
+        function addStroke(element) {
+
+            element.classList.add("strokeText");
+
+
+        }
+        
+
+        function disableStroke(element) {
+
+            element.classList.remove("strokeText");
+
+                
+        }
+
+        
+
+
+        function setupSite() {
+            input_name = prompt('Wilkommen! Wie heißt du?')
+
+            headline = document.getElementById('headline-Name')
+
+            headline.innerText = 'Hallo, ' + input_name + '!'
+
+
+            const table = document.getElementById('binaryTable-Palette');
+            const cells = table.getElementsByTagName('th');
+
+            cells.classList.add("strokeText");
+
+            
+        }
+
+        $('.header-overlay').css({
+            opacity: function() {
+                var elementHeight = $(this).height(),
+                    opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.8) + 0.2;
+
+            return opacity;
+            }
+});
+
+        
+    </script>
+</body>
+</html>
